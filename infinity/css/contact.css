@@ -1,0 +1,126 @@
+body {
+  position: relative;
+  width: 1368px;
+  height: 768px;
+  overflow: hidden;
+}
+.header {
+  width: 1368px;
+  height: 140px;
+  background: rgba(13, 23, 42, 1);
+  position: absolute;
+  text-align: center;
+}
+.nav {
+  flex:none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 28px;
+  height: 16px;
+  order: 0;
+  margin: auto;
+}
+.nl1 {
+  width: 36px;
+  height: 8px;
+  background-color: #d5a968;
+  flex: none;
+  order: 0;
+}
+.nl2 {
+  width: 18px;
+  height: 8px;
+  background-color: #ffffff;
+  flex: none;
+  order: 1;
+}
+.nl3 {
+  width: 36px;
+  height: 8px;
+  background-color: #d5a968;
+  flex: none;
+  order: 2;
+}
+.logo {
+  flex:none;
+  width: 120px;
+  height: 48px;
+  position: absolute;
+  order: 1;
+  margin: auto;
+}
+.VI_EN_btn {
+  flex:none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  position: absolute;
+  width: 72px;
+  height: 20px;
+  order: 2;
+  margin: auto;
+}
+#EN_btn {
+  width: 24px;
+  height: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #d5a968;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#ngan_cach {
+  width: 0px;
+  height: 12px;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#VI_btn {
+  width: 24px;
+  height: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.infor{
+  width: 1366px;
+  height: 628px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(13, 23, 42, 1);
+}
+.map_infor {
+  position: absolute;
+  width: 683px;
+  height: 200px;
+  background-color: rgba(13, 23, 42, 1);
+}
+.contact_infor {
+  position: absolute;
+  width: 683px;
+  height: 300px;
+  left: 683px;
+  background-color: rgba(13, 23, 42, 1);
+}
