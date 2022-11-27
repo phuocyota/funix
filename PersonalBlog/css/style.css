@@ -16,8 +16,9 @@ header .label_store {
 header .label_store img {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 200px;
   opacity: 0.4;
+  object-fit: cover;
 }
 
 header .label_store h1 {
