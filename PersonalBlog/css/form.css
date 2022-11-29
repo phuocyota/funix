@@ -1,0 +1,32 @@
+main .order {
+  border: 1px solid brown;
+  padding: 10px;
+  margin: auto;
+}
+
+main .order h4 {
+  margin: 0;
+  font-size: 24px;
+  border-bottom: 1px solid brown;
+}
+
+main .order .form .action-item {
+  display: flex;
+}
+
+main .order .form .action-item .error {
+  color: red;
+}
+
+main .order .action-item .label {
+  width: 150px;
+}
+
+main .order .form button {
+  margin-left: 150px;
+}
+
+main .order .form #include {
+  display: flex;
+  flex-direction: column;
+}

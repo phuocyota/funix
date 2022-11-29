@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/form.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/js/contact.js"></script>
     <title>Phuoc's Blog</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="label_store">
-            <img src="/images/header.jpg" />
-            <h1>Phuoc's Cake</h1>
-        </div>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown_content">
-                    <a href="/index.html#classic_yellow_cake">1.Classic Yellow Cake</a>
-                    <a href="/index.html#coconut_bundt_cake">2.Coconut Bundt Cake</a>
-                    <a href="/index.html#cream_cheese_pound_cake">3.Cream Cheese Pound Cake</a>
-                    <a href="/index.html#german_chocolate_cake">4.German Chocolate Cake</a>
-                </div>
-            </li>
-            <li><a href="/order.html">Order</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/about.html">About</a></li>
-        </ul>
+      <div class="label_store">
+        <img src="/images/header.jpg" />
+        <h1>Phuoc's Cake</h1>
+      </div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Products</a>
+          <div class="dropdown_content">
+            <a href="/index.html#classic_yellow_cake">1.Classic Yellow Cake</a>
+            <a href="/index.html#coconut_bundt_cake">2.Coconut Bundt Cake</a>
+            <a href="/index.html#cream_cheese_pound_cake"
+              >3.Cream Cheese Pound Cake</a
+            >
+            <a href="/index.html#german_chocolate_cake"
+              >4.German Chocolate Cake</a
+            >
+          </div>
+        </li>
+        <li><a href="/order.html">Order</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
     </header>
 
     <main>
-        <div class="cake">
-            <h4>Please contact with me</h4>
-            <form action="">
-                <div class="action-item">
-                    <div class="label">Your Name:</div>
-                    <input type="text" name="" id="" />
-                </div>
-                <div class="action-item">
-                    <div class="label">Your Email:</div>
-                    <input type="text" name="" id="" />
-                </div>
-                <div class="action-item">
-                    <div class="label">Subject:</div>
-                    <input type="text" name="" id="" />
-                </div>
-                <div class="action-item">
-                    <div class="label">Message:</div>
-                    <input type="text" name="" id="" />
-                </div>
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
+      <div class="order">
+        <h4>Contact me</h4>
+        <form class="form" id="form" action="/">
+          <div class="action-item">
+            <div class="label">Your Name:</div>
+            <div>
+              <input type="text" name="" id="nameTxt" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Your Email:</div>
+            <div>
+              <input type="text" name="" id="emailTxt" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Subject:</div>
+            <div>
+              <input type="text" name="" id="subjectTxt" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Message:</div>
+            <div>
+              <input type="text" name="" id="messageTxt" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </main>
 
     <footer>&copy; 2023 by Phuoc's Cake</footer>
-</body>
-
+  </body>
 </html>

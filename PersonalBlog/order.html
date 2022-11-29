@@ -1,84 +1,139 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/form.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/js/order.js"></script>
     <title>Phuoc's Blog</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="label_store">
-            <img src="/images/header.jpg" />
-            <h1>Phuoc's Cake</h1>
-        </div>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown_content">
-                    <a href="/index.html#classic_yellow_cake">1.Classic Yellow Cake</a>
-                    <a href="/index.html#coconut_bundt_cake">2.Coconut Bundt Cake</a>
-                    <a href="/index.html#cream_cheese_pound_cake">3.Cream Cheese Pound Cake</a>
-                    <a href="/index.html#german_chocolate_cake">4.German Chocolate Cake</a>
-                </div>
-            </li>
-            <li><a href="/order.html">Order</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/about.html">About</a></li>
-        </ul>
+      <div class="label_store">
+        <img src="/images/header.jpg" />
+        <h1>Phuoc's Cake</h1>
+      </div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Products</a>
+          <div class="dropdown_content">
+            <a href="/index.html#classic_yellow_cake">1.Classic Yellow Cake</a>
+            <a href="/index.html#coconut_bundt_cake">2.Coconut Bundt Cake</a>
+            <a href="/index.html#cream_cheese_pound_cake"
+              >3.Cream Cheese Pound Cake</a
+            >
+            <a href="/index.html#german_chocolate_cake"
+              >4.German Chocolate Cake</a
+            >
+          </div>
+        </li>
+        <li><a href="/order.html">Order</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
     </header>
 
     <main>
-        <div class="cake">
-            <h4>Please create order for my shop</h4>
-            <form action="">
-                <div class="action-item">
-                    <div class="label">Cake's Name:</div>
-                    <input type="text" name="" id="cakeNameText" />
-                    <div class="errorCakeName"></div>
-                </div>
-                <div class="action-item">
-                    <div class="label">FullName:</div>
-                    <input type="text" name="" id="fullNameText" />
-                    <div class="errorCakeName"></div>
-                </div>
-                <div class="action-item">
-                    <div class="label">Name In Cake:</div>
-                    <input type="text" name="" id="nameInCakeText" />
-                    <div class="errorCakeName"></div>
-                </div>
-                <div class="action-item">
-                    <div class="label">Buy with item inludes:</div>
-                    <input type="text" name="" id="" />
-                    <div class="errorCakeName"></div>
-                </div>
-                <div class="action-item">
-                    <div class="label">Delivering at:</div>
-                    <input type="date" name="" id="" />
-                    <div class="errorCakeName"></div>
-                </div>
-                <div class="action-item">
-                    <div class="label">Address:</div>
-                    <input type="text" name="" id="" />
-                    <div class="errorCakeName"></div>
-                </div>
-                <div class="action-item">
-                    <div class="label">Call before delivered:</div>
-                    <input type="checkbox" name="" id="" />
-                    <div class="errorCakeName"></div>
-                </div>
-            </form>
-        </div>
+      <div class="order">
+        <h4>Order now</h4>
+        <form class="form" id="form" action="/">
+          <div class="action-item">
+            <div class="label">Cake's Name:</div>
+            <div>
+              <select id="cake" class="info">
+                <option value="cake0">--- Select cake ---</option>
+                <option value="cake1">Classic Yellow Cake</option>
+                <option value="cake2">Coconut Bundt Cake</option>
+                <option value="cake3">Cream Cheese Pound Cake</option>
+                <option value="cake4">German Chocolate Cake</option>
+              </select>
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Your Name:</div>
+            <div>
+              <input type="text" name="" id="nameTxt" class="info" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Message:</div>
+            <div>
+              <input type="text" name="" id="messageTxt" class="info" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Includes:</div>
+            <div>
+              <div id="include" class="info">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="include0"
+                  class="include"
+                />Candle
+                <input
+                  type="checkbox"
+                  name=""
+                  id="include1"
+                  class="include"
+                />Firework
+                <input
+                  type="checkbox"
+                  name=""
+                  id="include2"
+                  class="include"
+                />Toys
+              </div>
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Deliver date:</div>
+            <div>
+              <input type="date" name="" id="deliverDate" class="info" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Deliver to:</div>
+            <div>
+              <input type="text" name="" id="deliverTo" class="info" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="label">Call before deliver?</div>
+            <div>
+              <div id="cbdChoice" class="info">
+                <input type="radio" name="radioBtn" id="cbdChoiceYes" />Yes
+                <input
+                  type="radio"
+                  name="radioBtn"
+                  id="cbdChoiceNo"
+                  checked
+                />No
+              </div>
+              <div class="error"></div>
+            </div>
+          </div>
+          <button type="submit">Order now</button>
+        </form>
+      </div>
     </main>
 
     <footer>&copy; 2023 by Phuoc's Cake</footer>
-</body>
-
+  </body>
 </html>
